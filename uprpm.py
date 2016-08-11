@@ -136,7 +136,6 @@ name= my local repo
 baseurl=http://%s:%s/
 enable=1
 gpgcheck=0
-priority=10
 """%(interface,ip,str(port) )
 	with open("%s/arfedora_rpm_repo/my_local_repo_%s.repo"%(home,interface),"w") as myfile:
 		myfile.write(repo)
